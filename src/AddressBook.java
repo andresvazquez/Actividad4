@@ -3,8 +3,8 @@ import java.util.*;
 
 public class AddressBook {
 
-    private HashMap<String, String> contacts = new HashMap<>();
-    private String inputFile,outputFile;
+    private final HashMap<String, String> contacts = new HashMap<>();
+    private final String inputFile,outputFile;
 
     public AddressBook(){
         this.inputFile = "src/files/input.txt";
@@ -18,7 +18,7 @@ public class AddressBook {
     }
 
     public void load(String inputFile) throws IOException{
-        BufferedReader reader = null;
+        BufferedReader reader;
         reader = new BufferedReader(new FileReader(inputFile));
         String line;
         while ((line = reader.readLine()) != null) {
@@ -106,7 +106,7 @@ public class AddressBook {
                     while(!validName){
                         System.out.print("Ingrese nombre: ");
                         name = scanner.nextLine();
-                        if(name.matches("^[a-zA-Z ]+$")){
+                        if(name.matches("^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]+$")){
                             validName=true;
                         }else{
                             System.out.println("El nombre es invalido, favor de utilizar solo letras.");
