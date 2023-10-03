@@ -3,8 +3,8 @@ import java.util.*;
 
 public class AddressBook {
 
-    private final HashMap<String, String> contacts = new HashMap<>();
-    private final String inputFile,outputFile;
+    private HashMap<String, String> contacts = new HashMap<>();
+    private String inputFile,outputFile;
 
     public AddressBook(){
         this.inputFile = "src/files/input.txt";
