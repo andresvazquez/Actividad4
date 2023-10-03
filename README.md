@@ -4,7 +4,7 @@ Actividad 4 del curso Computación en Java
 Esta Actividad es un programa para la gestión de una agenda de contactos, desarrollado por Andrés Eduardo Vázquez Pérez (Matrícula: AL03065873).
 
 ## Funcionamiento
-El programa recibe un archivo de entrada el cual lee y carga en un HashMap todos los contactos registrados en el archivo inicial, posteriormente despliega un menú con 3 funciones, las cuales son list, create, delete. Son funciones de gestión del Address Book.
+El programa recibe un archivo de entrada el cual lee y carga en un HashMap todos los contactos registrados en el archivo inicial, posteriormente despliega un menú con 3 funciones, las cuales son list, create, delete. Son funciones de gestión del Address Book. Al salir del programa, el archivo guarda el contenido del HashMap en un segundo archivo de salida.
 
 ## Creditos
 Autor: Andrés Eduardo Vázquez Pérez.
