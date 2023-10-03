@@ -7,8 +7,8 @@ public class AddressBook {
     private String inputFile,outputFile;
 
     public AddressBook(){
-        this.inputFile = "src/files/input.txt";
-        this.outputFile = "src/files/output.txt";
+        this.inputFile = "src/files/input.csv";
+        this.outputFile = "src/files/output.csv";
         try {
             load(inputFile);
         }
